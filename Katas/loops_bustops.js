@@ -85,3 +85,29 @@ function sum(numbers) {
   });
   return total;
 }
+
+// simple for loop
+
+sum = function (numbers) {
+  "use strict";
+  var total = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    total += numbers[i];
+  }
+  return total;
+};
+
+//Reduce Function
+
+/* The reduce() method is a powerful array method that can be used to iterate over an array and perform a calculation on each element, while accumulating the result in a single value. It takes two arguments:
+
+a callback function that will be called on each element of the array,
+an initial value that will be used as the starting point for the calculation.
+The callback function takes two arguments:
+
+an accumulator, which keeps track of the accumulated value and its updated on each iteration,
+the current value, which is the element of the array that is currently being processed. */
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
