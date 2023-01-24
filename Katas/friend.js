@@ -32,4 +32,8 @@ const friend2 = (friends) => {
   console.log(friend, "friend should have four letter names");
 };
 
-friend2(["bob", "joel", "tyrese", "mark"]);
+// filter Probably the most eloquent solution
+
+function friend(friends) {
+  return friends.filter((n) => n.length === 4);
+}
